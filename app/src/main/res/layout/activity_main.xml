@@ -74,11 +74,11 @@
                     android:layout_height="wrap_content"
                     android:src="@mipmap/ic_location_on_black_24dp"
                     android:contentDescription="@string/location_icon"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="40dp"
                     />
                 <TextView
                     android:id="@+id/addressTextView"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/address"
                     android:textSize="16sp"
