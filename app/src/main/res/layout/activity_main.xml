@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/shopIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/blackbird"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/blackBirdLogo"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/shopNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/black_bird"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/wineShopTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/wine_shop"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold|italic"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/addressIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_location_on_black_24dp"
+                    android:contentDescription="@string/location_icon"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:id="@+id/addressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/primary_text"
+                    android:clickable="true"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/phoneNumberIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_phone_black_24dp"
+                    android:contentDescription="@string/location_icon"
+                    android:layout_marginStart="10dp"
+                    />
+                <TextView
+                    android:id="@+id/phoneNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phoneNumber"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginStart="2dp"
+                    android:clickable="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/faxIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_local_printshop_black_24dp"
+                    android:contentDescription="@string/location_icon"
+                    android:layout_marginStart="10dp"
+                    />
+                <TextView
+                    android:id="@+id/faxTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faxNumber"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginStart="2dp"
+                    android:clickable="false"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/emailIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_email_black_24dp"
+                    android:contentDescription="@string/location_icon"
+                    android:layout_marginStart="10dp"
+                    />
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emailAddress"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="1dp"
+                    android:clickable="true"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/websiteIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/browser"
+                    android:contentDescription="@string/location_icon"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="centerInside"
+                    />
+                <TextView
+                    android:id="@+id/websiteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/websiteName"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="1dp"
+                    android:clickable="true"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
