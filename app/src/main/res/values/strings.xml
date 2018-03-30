@@ -8,5 +8,5 @@
     <string name="emailAddress">info@blackbirdwines.com</string>
     <string name="faxNumber">0845874597</string>
     <string name="phoneNumber">0845879808</string>
-    <string name="address"> Ground Floor / Wellington Central,\n836, Welligton St, West Perth,\nWA 6005.</string>
+    <string name="address">Wellington Central,\n836, Welligton St,\nWest Perth, WA 6005.</string>
 </resources>
